@@ -7,13 +7,13 @@ const LatestNews = () => {
       <p className="bg-[#D72050] text-base-100 px-3 py-1">Latest</p>
       <Marquee pauseOnHover={true} className="space-x-3">
         <Link to="/news">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
         </Link>
         <Link  to="/news">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
         </Link>
         <Link  to="/news">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque magni iusto dolor.
         </Link>
       </Marquee>
     </div>
