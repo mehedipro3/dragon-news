@@ -1,3 +1,3 @@
 # Live Link
 
-https://mellow-chebakia-f83f9a.netlify.app/category/01
+https://dragon-news-49585.firebaseapp.com/
