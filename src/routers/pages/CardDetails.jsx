@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 const CardDetails = () => {
   const data = useLoaderData();
   const news = data.data[0];
-  console.log(news);
+  
   return (
     <div>
       <header>
