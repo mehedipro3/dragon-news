@@ -5,6 +5,8 @@ import AuthLayout from "../Layouts/AuthLayout";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CardDetails from "./pages/CardDetails";
+import PrivateRouter from "./PrivateRouter";
+import ErrorMassage from "./pages/ErrorMassage";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/news/:id",
-    element: <CardDetails></CardDetails>,
+    element: (
+      <PrivateRouter>
+        <CardDetails></CardDetails>
+      </PrivateRouter>
+    ),
     loader:({params})=> fetch(`https://openapi.programming-hero.com/api/news/${params.id}`),
   },
   {
@@ -43,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>error</div>,
+    element: <ErrorMassage></ErrorMassage>,
   },
 ]);
  
